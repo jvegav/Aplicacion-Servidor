@@ -5,4 +5,5 @@ from cliente import views
 
 urlpatterns = [
     path('verificar/', views.verificar, name='verificar'),
+     path('clientes/', views.clientes_list, name = 'clientes_list'),
 ]
