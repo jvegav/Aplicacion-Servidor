@@ -30,6 +30,8 @@ def verificar(request):
         celular_descifrado = decrypt_message(llavepublica,celular)
         email_descifrado = decrypt_message(llavepublica,email)
 
+        #nombre_descifrado = 'Paula'
+
         data_concatenada =  nombre_descifrado + documento_descifrado +celular_descifrado + email_descifrado
         data_concatenada_hash = calculate_hash(data_concatenada)
 
